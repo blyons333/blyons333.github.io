@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { Link } from 'react-router-dom';
 
-function App() {
+function Test() {
   return (
-    <div className="App">
+    <div className='App'>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,10 +18,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <h1>Testing!</h1>
-      <Link to='/test'>Link to test!</Link>
+      <h1>Second test page!</h1>
+      <Link to='/'>Back</Link>
     </div>
   );
 }
 
-export default App;
+export default Test;
