@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/blyons333.github.io/precache-manifest.92362a7f5fe7c385130bc3c0bfa65858.js"
+  "/blyons333.github.io/precache-manifest.2460f8018577c3fc05caa5076e9709df.js"
 );
 
 self.addEventListener('message', (event) => {
