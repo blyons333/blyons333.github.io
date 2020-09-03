@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './components/App/App';
-import Test from './components/Test/Test';
+import Code from './components/Code/Code';
+import Design from './components/Design/Design';
+import Blog from './components/Blog/Blog';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Resume from './components/Resume/Resume';
 import * as serviceWorker from './serviceWorker';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-
+import * as bootstrap from './bootstrap.scss';
+import 'bootstrap';
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,8 +20,26 @@ ReactDOM.render(
         <Route exact path='/'>
           <App />
         </Route>
-        <Route exact path='/test'>
-          <Test />
+        <Route path='/code'>
+          <Code />
+        </Route>
+        <Route path='/design'>
+          <Design />
+        </Route>
+        <Route path='/blog'>
+          <Blog />
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+        <Route path='/resume'>
+          <Resume />
+        </Route>
+        <Route path='/'>
+          <App />
         </Route>
       </Switch>
     </BrowserRouter>
