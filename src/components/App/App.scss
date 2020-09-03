@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .menu-column {
   h1 {
     padding: 1rem;
@@ -38,6 +40,34 @@
     top: 10vh;
     max-width: 10vw;
     height: 60vh;
+  }
+}
+
+.homepage-container {
+  @media (max-width: $maxSm) {
+    .center-vertically {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    &.full-height,
+    .full-height {
+      height: auto;
+    }
+
+    .menu-column {
+      h1 {
+        padding: .5rem 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: $maxSm) {
+  .bottom-image {
+    img {
+      position: unset;
+    }
   }
 }
 

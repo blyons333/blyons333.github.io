@@ -63,11 +63,12 @@ const NavBar = () => {
     }
 
     returnHtml = (
-      <Navbar bg='light'>
+      <Navbar bg='light' collapseOnSelect expand='lg'>
         <Navbar.Brand href='/'>
           <img src={logo} width='150' height='150' alt='logo' />
         </Navbar.Brand>
-        {navLinks}
+        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+        <Navbar.Collapse className='right-align-text'>{navLinks}</Navbar.Collapse>
       </Navbar>
     );
   }
